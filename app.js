@@ -80,23 +80,6 @@ app.get("/posts/:userPostID", function (req, res) {
     .catch((err) => {
       console.log(err);
     });
-
-  // const userReqTitle = req.params.userParams;
-  // blogModel.find({}).then((blogModel) => {
-  //   const posts = blogModel;
-  //   posts.forEach(function (eachPost) {
-  //     if (_.lowerCase(eachPost.title) === _.lowerCase(userReqTitle)) {
-  //       res.render("post", {
-  //       });
-  //     } else {
-  //       res.render("notFound", {
-  //         errorMessage: "Oops! 😕",
-  //         errorDescription:
-  //           "The journal you're looking for could not be found. Please check the URL and try again. 📚",
-  //       });
-  //     }
-  //   });
-  // });
 });
 
 app.post("/compose", function (req, res) {
